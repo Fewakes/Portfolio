@@ -2,9 +2,10 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+
+import WordwiseImg from "@/public/wordwise.png";
+import FastpizzaImg from "@/public/fastpizza.png";
+import ThewildoasisImg from "@/public/thewildoasis.png";
 
 export const links = [
   {
@@ -62,25 +63,25 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "The Wild Oasis",
     description:
-      "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "The Wild Oasis is designed to manage hotel operations, including sales statistics, cabin management, user management, booking management and so much more!",
+    tags: ["React", "React Query", "Redux", "Supabase", "Styled Components"],
+    imageUrl: ThewildoasisImg,
   },
   {
-    title: "rmtDev",
+    title: "Fast Pizza",
     description:
-      "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "A quick and convinient way to order pizza online. add your pizza to cart, manage the quanitity, track your order and more.",
+    tags: ["React", "React Router", "Redux Toolkit", "Tailwind"],
+    imageUrl: FastpizzaImg,
   },
   {
-    title: "Word Analytics",
+    title: "World Wise",
     description:
-      "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "The web app is a travel tracking and adventure registration application. Show off your travels and adventures to your friends and family.",
+    tags: ["React", "Context API", "Thunks"],
+    imageUrl: WordwiseImg,
   },
 ] as const;
 
