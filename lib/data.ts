@@ -72,14 +72,14 @@ export const projectsData = [
   {
     title: "Fast Pizza",
     description:
-      "A quick and convinient way to order pizza online. add your pizza to cart, manage the quanitity, track your order and more.",
+      "A quick and convinient way to order pizza online. Add your pizza to the cart, manage the quanitity, track your order and more.",
     tags: ["React", "React Router", "Redux Toolkit", "Tailwind"],
     imageUrl: FastpizzaImg,
   },
   {
     title: "World Wise",
     description:
-      "The web app is a travel tracking and adventure registration application. Show off your travels and adventures to your friends and family.",
+      "This web app is a travel tracking and adventure registration application. Show off your travels and adventures to your friends and family.",
     tags: ["React", "Context API", "Thunks"],
     imageUrl: WordwiseImg,
   },
