@@ -7,7 +7,7 @@ import clsx from "clsx";
 import {
   ActiveSectionContext,
   useActiveSectionContext,
-} from "./context/active-section-context";
+} from "../context/active-section-context";
 
 export default function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } =

@@ -36,28 +36,44 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Title",
-    location: "Location",
+    title: "Consultant",
+    location: "Manchester, UK",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Title",
-    location: "Location",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "I have conducted market research and identified new opportunities that resulted in multiple new clients.",
     icon: React.createElement(CgWorkAlt),
-    date: "2021 - 2022",
+    date: "2019 - 2020",
   },
   {
-    title: "Title",
-    location: "Location",
+    title: "Fleet Manager",
+    location: "Bruntingthorpe, UK",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I managed a demonstration and events fleet for Jaguar and Land-Rover. I have created and overseen a process of vehicle preparations for events such as wimbledon.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2020 - 2022",
+  },
+  {
+    title: "Graduated Bootcamp's",
+    location: "Leicester, GB",
+    description:
+      "I have completed a number of bootcamp's to learn new skills and technologies. These include Javascript, React, Next.js, Node.js, TypeScript, Redux, Tailwind and more.",
     icon: React.createElement(FaReact),
+    date: "2022",
+  },
+  {
+    title: "Transport Co-ordinator",
+    location: "Ashby-de-la-Zouch, UK",
+    description:
+      "I am a shift co-ordinator/shift-manager for a well known transport company. I am responsible for managing a fleet of around 200 Drivers and everything that comes with it.",
+    icon: React.createElement(CgWorkAlt),
     date: "2022 - present",
+  },
+  {
+    title: "Working on Projects",
+    location: "Leicester, GB",
+    description:
+      "Working both on personal and freelance projects, to gain experience and build my portfolio.",
+    icon: React.createElement(FaReact),
+    date: "2023",
   },
 ] as const;
 
@@ -88,13 +104,20 @@ export const projectsData = [
 export const skillsData = [
   "HTML",
   "CSS",
+  "SASS",
+  "Tailwind",
+  "Styled Components",
+  "Material-ui",
   "JavaScript",
   "TypeScript",
-  "React",
+  "React.js",
+  "React Query",
+  "React Router",
+  "Redux",
+  "Redux Toolkit",
   "Next.js",
   "Node.js",
-  "Git",
-  "Tailwind",
-  "Redux",
+  "Supabase",
   "Framer Motion",
+  "Git",
 ] as const;
