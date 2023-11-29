@@ -1,11 +1,11 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
 
 import WordwiseImg from "@/public/wordwise.png";
 import FastpizzaImg from "@/public/fastpizza.png";
 import ThewildoasisImg from "@/public/thewildoasis.png";
+import { LiaUniversitySolid } from "react-icons/lia";
 
 export const links = [
   {
@@ -36,12 +36,12 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Consultant",
+    title: "Graduate Master's Degree",
     location: "Manchester, UK",
     description:
-      "I have conducted market research and identified new opportunities that resulted in multiple new clients.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2020",
+      "I have Graduated from Manchester Metropolitan University with a Master's Degree in Analytics. Here, my fascination with computer languages and programming began.",
+    icon: React.createElement(LiaUniversitySolid),
+    date: "2020",
   },
   {
     title: "Fleet Manager",
@@ -57,7 +57,7 @@ export const experiencesData = [
     description:
       "I have completed a number of bootcamp's to learn new skills and technologies. These include Javascript, React, Next.js, Node.js, TypeScript, Redux, Tailwind and more.",
     icon: React.createElement(FaReact),
-    date: "2022",
+    date: "2020 - 2022",
   },
   {
     title: "Transport Co-ordinator",
@@ -68,12 +68,12 @@ export const experiencesData = [
     date: "2022 - present",
   },
   {
-    title: "Working on Projects",
+    title: "Freelance Developer",
     location: "Leicester, GB",
     description:
       "Working both on personal and freelance projects, to gain experience and build my portfolio.",
     icon: React.createElement(FaReact),
-    date: "2023",
+    date: "2022 - present",
   },
 ] as const;
 
@@ -84,6 +84,7 @@ export const projectsData = [
       "The Wild Oasis is designed to manage hotel operations, including sales statistics, cabin management, user management, booking management and so much more!",
     tags: ["React", "React Query", "Redux", "Supabase", "Styled Components"],
     imageUrl: ThewildoasisImg,
+    projectUrl: "https://thewildoasis-cms.netlify.app/login",
   },
   {
     title: "Fast Pizza",
@@ -91,6 +92,7 @@ export const projectsData = [
       "A quick and convinient way to order pizza online. Add your pizza to the cart, manage the quanitity, track your order and more.",
     tags: ["React", "React Router", "Redux Toolkit", "Tailwind"],
     imageUrl: FastpizzaImg,
+    projectUrl: "https://fast-react-pizza-fewakes.netlify.app/",
   },
   {
     title: "World Wise",
@@ -98,6 +100,7 @@ export const projectsData = [
       "This web app is a travel tracking and adventure registration application. Show off your travels and adventures to your friends and family.",
     tags: ["React", "Context API", "Thunks"],
     imageUrl: WordwiseImg,
+    projectUrl: null,
   },
 ] as const;
 
