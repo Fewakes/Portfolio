@@ -9,7 +9,7 @@ export const validateString = (
   return true;
 };
 
-export const getErrorMessages = (error: unknown) => {
+export const getErrorMessage = (error: unknown): string => {
   let message: string;
 
   if (error instanceof Error) {
@@ -19,7 +19,7 @@ export const getErrorMessages = (error: unknown) => {
   } else if (typeof error === "string") {
     message = error;
   } else {
-    message = "Unknown error";
+    message = "Something went wrong";
   }
 
   return message;

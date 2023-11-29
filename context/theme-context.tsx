@@ -1,19 +1,23 @@
 "use client";
-import React, { createContext, useEffect, useState } from "react";
+
+import React, { useEffect, useState, createContext, useContext } from "react";
 
 type Theme = "light" | "dark";
 
-type ThemeContextProviderprops = { children: React.ReactNode };
+type ThemeContextProviderProps = {
+  children: React.ReactNode;
+};
 
 type ThemeContextType = {
   theme: Theme;
   toggleTheme: () => void;
 };
+
 const ThemeContext = createContext<ThemeContextType | null>(null);
 
 export default function ThemeContextProvider({
   children,
-}: ThemeContextProviderprops) {
+}: ThemeContextProviderProps) {
   const [theme, setTheme] = useState<Theme>("light");
 
   const toggleTheme = () => {
@@ -33,6 +37,7 @@ export default function ThemeContextProvider({
 
     if (localTheme) {
       setTheme(localTheme);
+
       if (localTheme === "dark") {
         document.documentElement.classList.add("dark");
       }
@@ -54,10 +59,12 @@ export default function ThemeContextProvider({
   );
 }
 
-export function useThemeContext() {
-  const context = React.useContext(ThemeContext);
-  if (context === undefined || context === null) {
-    throw new Error("useThemeContext must be used within a ThemeContext");
+export function useTheme() {
+  const context = useContext(ThemeContext);
+
+  if (context === null) {
+    throw new Error("useTheme must be used within a ThemeContextProvider");
   }
+
   return context;
 }
