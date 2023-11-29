@@ -1,11 +1,12 @@
 import React from "react";
+
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
+import { LiaUniversitySolid } from "react-icons/lia";
 
-import wordwiseimg from "../public/wordwise.png";
 import fastpizzaimg from "../public/fastpizza.png";
 import thewildoasisimg from "../public/thewildoasis.png";
-import { LiaUniversitySolid } from "react-icons/lia";
+import wordwiseimg from "../public/wordwise.png";
 
 export const links = [
   {
