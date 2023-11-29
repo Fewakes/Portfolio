@@ -27,7 +27,7 @@ export default function Skills() {
         {skillsData.map((skill, index) => (
           <motion.li
             key={index}
-            className="hover:bg-gray-200 bg-white border border-black/[0.1] rounded-xl px-5 py-3 "
+            className="hover:bg-gray-200 bg-white border border-black/[0.1] rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
             variants={fadeInAnimationsVariants}
             initial="initial"
             whileInView="animate"
